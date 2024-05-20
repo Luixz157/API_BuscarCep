@@ -1,0 +1,56 @@
+<!--Exercicio de Api, o Usuario vai buscar um CEP e vai aparecer-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Primary Meta Tags -->
+    <title>Buscar Cep - Luixz</title>
+    <meta name="title" content="Buscar Cep - Luixz" />
+    <meta name="description" content="Busque CEPs em nosso site e obtenha instantaneamente informações como bairro, logradouro e estado. Simplifique suas buscas por CEPs conosco!" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Buscar Cep - Luixz" />
+    <meta property="og:description" content="Busque CEPs em nosso site e obtenha instantaneamente informações como bairro, logradouro e estado. Simplifique suas buscas por CEPs conosco!" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Buscar Cep - Luixz" />
+    <meta property="twitter:description" content="Busque CEPs em nosso site e obtenha instantaneamente informações como bairro, logradouro e estado. Simplifique suas buscas por CEPs conosco!" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+</head>
+<body>
+    <h1>Buscador de Cep</h1>
+    
+    <div class="area-busca">
+        <input type="text" id="js-input-cep">
+        <button id="js-btn-buscar-cep">Buscar CEP</button>
+    </div>
+
+    <p class="msg-erro" id="js-error">Preencha o campo, por favor!!!</p>
+
+    <div class="todos-dados" id="js-dados">
+            <h2>Dados do CEP</h2>
+            <div>
+                <label for="">Bairro</label>
+                <input type="text" id="js-input-bairro" readonly> <!--readonly apenas para leitura-->
+                <label for="">CEP</label>
+                <input type="text" id="js-input-cep-dados" readonly>
+                <label for="">Logradouro</label>
+                <input type="text" id="js-input-logradouro" readonly>
+                <label for="">Estado</label>
+                <input type="text" id="js-input-estado" readonly>
+            </div>
+    </div>
+    
+    <script src="/main.js"></script>
+</body>
+</html>
